@@ -5,7 +5,7 @@ import {
   Microscope, 
   Users, 
   Globe, 
-  TrendingUp,
+
   Zap,
   Star,
   ChevronRight
@@ -214,7 +214,7 @@ const Skills: React.FC = () => {
             {/* Row 1 - Programming & Analysis (Left to Right) */}
             <div className="overflow-hidden">
               <InfiniteScrollRow
-                technologies={TECH_STACK.slice(0, 6)}
+                technologies={TECH_STACK.slice(0, Math.min(6, TECH_STACK.length))}
                 direction="left"
                 speed="20"
               />
@@ -223,7 +223,7 @@ const Skills: React.FC = () => {
             {/* Row 2 - Agricultural Technology (Right to Left) */}
             <div className="overflow-hidden">
               <InfiniteScrollRow
-                technologies={TECH_STACK.slice(6, 12)}
+                technologies={TECH_STACK.slice(6, Math.min(12, TECH_STACK.length))}
                 direction="right"
                 speed="25"
                 delay={1}
@@ -233,7 +233,7 @@ const Skills: React.FC = () => {
             {/* Row 3 - Research & Lab (Left to Right) */}
             <div className="overflow-hidden">
               <InfiniteScrollRow
-                technologies={TECH_STACK.slice(12, 18)}
+                technologies={TECH_STACK.slice(12, Math.min(18, TECH_STACK.length))}
                 direction="left"
                 speed="30"
                 delay={2}
@@ -243,7 +243,7 @@ const Skills: React.FC = () => {
             {/* Row 4 - Management & Communication (Right to Left) */}
             <div className="overflow-hidden">
               <InfiniteScrollRow
-                technologies={TECH_STACK.slice(18, 24)}
+                technologies={TECH_STACK.slice(18, Math.min(24, TECH_STACK.length))}
                 direction="right"
                 speed="22"
                 delay={0.5}

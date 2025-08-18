@@ -5,7 +5,7 @@ import { PERSONAL_INFO, SOCIAL_LINKS } from '@/utils/constants';
 import { useMagneticHover } from '@/hooks/useMagneticHover';
 
 const Footer: React.FC = () => {
-  const scrollToTopRef = useMagneticHover({ strength: 0.3, scale: 1.1 });
+  const scrollToTopRef = useMagneticHover<HTMLButtonElement>({ strength: 0.3, scale: 1.1 });
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -22,15 +22,7 @@ const Footer: React.FC = () => {
     }
   };
 
-  const getSocialColor = (color: string) => {
-    switch (color) {
-      case 'blue': return 'hover:text-blue-600 hover:bg-blue-50';
-      case 'gray': return 'hover:text-gray-900 hover:bg-gray-50';
-      case 'pink': return 'hover:text-pink-600 hover:bg-pink-50';
-      case 'emerald': return 'hover:text-emerald-600 hover:bg-emerald-50';
-      default: return 'hover:text-accent-gold hover:bg-accent-gold/10';
-    }
-  };
+
 
   return (
     <footer className="bg-primary-950 text-white relative overflow-hidden">
@@ -67,7 +59,7 @@ const Footer: React.FC = () => {
                   Always excited to collaborate on projects that make a positive impact.
                 </p>
                 <div className="flex items-center space-x-4">
-                  {SOCIAL_LINKS.map((social, index) => (
+                  {SOCIAL_LINKS.map((social) => (
                     <motion.a
                       key={social.name}
                       href={social.url}
@@ -78,7 +70,7 @@ const Footer: React.FC = () => {
                       whileTap={{ scale: 0.9 }}
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.5 }}
+                      transition={{ delay: 0.1, duration: 0.5 }}
                       viewport={{ once: true }}
                     >
                       {getSocialIcon(social.icon)}

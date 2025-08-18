@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   
-  const logoRef = useMagneticHover({ strength: 0.2, scale: 1.02 });
+  const logoRef = useMagneticHover<HTMLDivElement>({ strength: 0.2, scale: 1.02 });
 
   useEffect(() => {
     const handleScroll = () => {

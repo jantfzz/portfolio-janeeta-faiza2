@@ -1,4 +1,4 @@
-import { useRef, useEffect, MouseEvent } from 'react';
+import { useRef, useEffect, MouseEvent, RefObject } from 'react';
 
 interface UseMagneticHoverOptions {
   strength?: number;
@@ -6,9 +6,9 @@ interface UseMagneticHoverOptions {
   disabled?: boolean;
 }
 
-export const useMagneticHover = (options: UseMagneticHoverOptions = {}) => {
+export const useMagneticHover = <T extends HTMLElement = HTMLElement>(options: UseMagneticHoverOptions = {}): RefObject<T> => {
   const { strength = 0.3, scale = 1.05, disabled = false } = options;
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<T>(null);
 
   useEffect(() => {
     const element = elementRef.current;
@@ -45,9 +45,9 @@ export const useMagneticHover = (options: UseMagneticHoverOptions = {}) => {
   return elementRef;
 };
 
-export const use3DTilt = (options: { maxTilt?: number; disabled?: boolean } = {}) => {
+export const use3DTilt = <T extends HTMLElement = HTMLElement>(options: { maxTilt?: number; disabled?: boolean } = {}): RefObject<T> => {
   const { maxTilt = 15, disabled = false } = options;
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<T>(null);
 
   useEffect(() => {
     const element = elementRef.current;

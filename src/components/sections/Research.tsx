@@ -6,7 +6,7 @@ import {
   FileText, 
   TrendingUp, 
   Calendar,
-  ExternalLink,
+
   Medal,
   Trophy,
   Star,
@@ -169,7 +169,7 @@ const Research: React.FC = () => {
         </div>
 
         {/* Organization (if available) */}
-        {research.organization && (
+        {'organization' in research && research.organization && (
           <div className="flex items-center space-x-2 text-sm text-gray-500 mb-4">
             <BookOpen className="w-4 h-4" />
             <span>{research.organization}</span>
@@ -431,7 +431,7 @@ const Research: React.FC = () => {
                         </div>
 
                         {/* Organization */}
-                        {research.organization && (
+                        {'organization' in research && research.organization && (
                           <div className="flex items-center space-x-3 text-gray-600">
                             <BookOpen className="w-5 h-5" />
                             <span className="text-lg">{research.organization}</span>
