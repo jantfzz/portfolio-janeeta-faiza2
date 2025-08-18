@@ -86,15 +86,25 @@
   
   /* Text Styles */
   .text-hero {
-    @apply text-hero font-bold font-poppins leading-none tracking-tight;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 700;
+    font-family: 'Poppins', system-ui, sans-serif;
+    letter-spacing: -0.025em;
   }
   
   .text-display {
-    @apply text-display font-bold font-poppins leading-tight;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
   
   .text-heading {
-    @apply text-heading font-semibold font-inter;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.3;
+    font-weight: 600;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   
   .text-gradient {
