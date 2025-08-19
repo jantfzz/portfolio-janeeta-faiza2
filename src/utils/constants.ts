@@ -2,12 +2,12 @@
 export const PERSONAL_INFO = {
   name: "Janeeta Faiza",
   title: "Bio-Agricultural Engineering Student",
-  subtitle: "Research Enthusiast & Project Leadership Specialist",
+  subtitle: "Scientific Research & Project Leadership Specialist",
   location: "Bandung, Indonesia",
   university: "Institut Teknologi Bandung",
   period: "2022-present",
-  email: "janeeta.faiza@students.itb.ac.id",
-  phone: "+62 812-3456-7890",
+  email: "janeetafz@gmail.com",
+  phone: "+62 853-535-320-03",
   linkedin: "https://linkedin.com/in/janeetafaiza",
   github: "https://github.com/janeetafaiza",
   instagram: "https://instagram.com/janeetafaiza",
@@ -19,10 +19,10 @@ export const PROFESSIONAL_SUMMARY =
 
 // Key Statistics
 export const KEY_STATS = [
-  { label: "Research Papers", value: 25, suffix: "+" },
+  { label: "Research Papers", value: 10, suffix: "+" },
   { label: "Competition Awards", value: 3, suffix: "" },
-  { label: "Students Mentored", value: 100, suffix: "+" },
-  { label: "Revenue Growth", value: 60, suffix: "%" },
+  { label: "Students Mentored", value: 200, suffix: "+" },
+  { label: "Revenue Growth", value: 70, suffix: "%" },
   { label: "Sponsors Negotiated", value: 15, suffix: "+" },
 ] as const;
 
@@ -185,7 +185,7 @@ export const SKILLS = {
     { name: "Python", level: 85, description: "Data analysis, automation" },
     { name: "C++", level: 70, description: "Algorithm development" },
     { name: "SQL", level: 80, description: "Database management" },
-    { name: "Power BI", level: 75, description: "Data visualization" },
+    { name: "Power BI", level: 70, description: "Data visualization" },
   ],
   agricultural: [
     { name: "Remote Sensing & GIS", level: 90, description: "Spatial analysis" },
@@ -196,7 +196,7 @@ export const SKILLS = {
   management: [
     { name: "Project Management", level: 95, description: "Leadership & coordination" },
     { name: "Team Leadership", level: 90, description: "People management" },
-    { name: "Public Speaking", level: 85, description: "Communication" },
+    { name: "Public Speaking", level: 70, description: "Communication" },
     { name: "Content Creation", level: 90, description: "Digital marketing" },
   ],
   languages: [
@@ -237,7 +237,7 @@ export const TECH_STACK = [
   { name: "Public Speaking", icon: "🎤", category: "Communication" },
   { name: "Content Creation", icon: "✍️", category: "Marketing" },
   { name: "Digital Marketing", icon: "📱", category: "Marketing" },
-  { name: "Grant Writing", icon: "💰", category: "Funding" },
+  { name: "Copywriting", icon: "💰", category: "Funding" },
 ] as const;
 
 // Navigation Links
@@ -272,7 +272,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "Email",
-    url: "mailto:janeeta.faiza@students.itb.ac.id",
+    url: "mailto:janeetafz@gmail.com",
     icon: "mail",
     color: "emerald"
   }
