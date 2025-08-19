@@ -6,7 +6,7 @@ A sophisticated, professional portfolio website for Janeeta Faiza - Bio-Agricult
 
 ### Design Philosophy
 - **Clean, minimalist aesthetic** with premium feel 
-- **Sophisticated animations** with rozan.id inspired complex interactions
+- **Sophisticated animations** with complex interactions
 - **Professional color palette** with elegant gradients
 - **Mobile-first responsive design** with excellent typography hierarchy
 - **High-quality visual presentation** with glassmorphism effects
