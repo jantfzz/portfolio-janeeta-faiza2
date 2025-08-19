@@ -135,8 +135,24 @@ const About: React.FC = () => {
                 className="relative overflow-hidden rounded-3xl shadow-premium hover:shadow-premium-hover transition-all duration-500"
                 whileHover={{ y: -5 }}
               >
-                <div className="aspect-[4/5] bg-gradient-to-br from-accent-gold/20 to-accent-purple/20 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-accent-gold to-accent-orange rounded-full flex items-center justify-center text-4xl font-bold text-primary-950">
+                <div className="aspect-[4/5] bg-gradient-to-br from-accent-gold/20 to-accent-purple/20 flex items-center justify-center relative">
+                  {/* Replace this div with your actual image */}
+                  <img 
+                    src="/images/profile.jpg" 
+                    alt={PERSONAL_INFO.name}
+                    className="w-full h-full object-cover rounded-3xl"
+                    onError={(e) => {
+                      // Fallback to initials if image doesn't exist
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
+                  />
+                  <div 
+                    className="w-32 h-32 bg-gradient-to-br from-accent-gold to-accent-orange rounded-full flex items-center justify-center text-4xl font-bold text-primary-950"
+                    style={{ display: 'none' }}
+                  >
                     {PERSONAL_INFO.name.split(' ').map(n => n[0]).join('')}
                   </div>
                 </div>
