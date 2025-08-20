@@ -262,7 +262,7 @@ const Contact: React.FC = () => {
             Let's <span className="text-gradient">Collaborate</span> Together
           </h2>
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
             I'm always excited to discuss research opportunities, academic collaborations, 
             and innovative projects in agricultural engineering. Let's create something meaningful together.
           </p>
@@ -300,7 +300,7 @@ const Contact: React.FC = () => {
                       </div>
                       <div className="flex-1">
                         <h4 className="font-semibold text-white mb-1">{info.label}</h4>
-                        <p className="text-gray-300 group-hover:text-white transition-colors">{info.value}</p>
+                        <p className="text-gray-100 group-hover:text-white transition-colors">{info.value}</p>
                       </div>
                     </div>
                   </motion.a>
@@ -319,7 +319,7 @@ const Contact: React.FC = () => {
                 <div className="w-3 h-3 bg-accent-emerald rounded-full animate-pulse" />
                 <h4 className="font-semibold text-white">Currently Available</h4>
               </div>
-              <div className="space-y-3 text-sm text-gray-300">
+              <div className="space-y-3 text-sm text-gray-100">
                 <div className="flex items-center space-x-2">
                   <Clock className="w-4 h-4" />
                   <span>Response time: Within 24 hours</span>
@@ -387,7 +387,7 @@ const Contact: React.FC = () => {
                         className={`p-4 rounded-xl border-2 transition-all duration-300 text-left ${
                           isSelected
                             ? `${colors.bg} ${colors.border} ${colors.text}`
-                            : 'bg-white/5 border-white/10 text-gray-300 hover:border-white/20'
+                            : 'bg-white/5 border-white/10 text-gray-100 hover:border-white/20'
                         }`}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}

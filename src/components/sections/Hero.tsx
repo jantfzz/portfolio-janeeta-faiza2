@@ -123,7 +123,7 @@ const Hero: React.FC = () => {
                   animate={{ scale: [1, 1.5, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 />
-                <span className="text-gray-300 font-medium">Hello, I'm</span>
+                <span className="text-gray-100 font-medium">Hello, I'm</span>
               </motion.div>
 
               {/* Name */}
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                <span className="text-gradient">{PERSONAL_INFO.name}</span>
+                <span className="text-blue-300">{PERSONAL_INFO.name}</span>
               </motion.h1>
 
               {/* Dynamic Title */}
@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
 
               {/* Subtitle */}
               <motion.p
-                className="text-xl text-gray-300 mb-8 max-w-lg mx-auto lg:mx-0"
+                className="text-xl text-gray-100 mb-8 max-w-lg mx-auto lg:mx-0"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
@@ -165,7 +165,7 @@ const Hero: React.FC = () => {
 
               {/* Location & University */}
               <motion.div
-                className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 mb-8 text-gray-400"
+                className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 mb-8 text-gray-200"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.6 }}
@@ -233,7 +233,7 @@ const Hero: React.FC = () => {
         >
           <motion.button
             onClick={handleScrollToNext}
-            className="flex flex-col items-center space-y-2 text-gray-400 hover:text-accent-gold transition-colors duration-300 group"
+            className="flex flex-col items-center space-y-2 text-gray-200 hover:text-accent-gold transition-colors duration-300 group"
             whileHover={{ y: -2 }}
           >
             <span className="text-sm font-medium">Discover More</span>
@@ -256,7 +256,7 @@ const Hero: React.FC = () => {
       >
         <div className="container-premium">
           <motion.p
-            className="text-gray-300 text-center max-w-4xl mx-auto leading-relaxed"
+            className="text-gray-100 text-center max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 3.5, duration: 0.6 }}
