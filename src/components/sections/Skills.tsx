@@ -275,7 +275,7 @@ const Skills: React.FC = () => {
                   className={`w-full text-left p-6 rounded-2xl border-2 transition-all duration-300 ${
                     isActive
                       ? `${colors.bg} ${colors.border} ${colors.glow}`
-                      : 'bg-gray-800 border-gray-600 hover:border-gray-500 hover:shadow-lg text-white'
+                      : 'bg-white border-gray-200 hover:border-gray-300 hover:shadow-lg'
                   }`}
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -284,14 +284,14 @@ const Skills: React.FC = () => {
                   transition={{ delay: 0.6 + index * 0.1, duration: 0.5 }}
                 >
                   <div className="flex items-start space-x-4">
-                    <div className={`p-3 rounded-xl ${isActive ? colors.bg : 'bg-gray-700'} border ${isActive ? colors.border : 'border-gray-500'}`}>
-                      <Icon className={`w-6 h-6 ${isActive ? colors.text : 'text-gray-300'}`} />
+                    <div className={`p-3 rounded-xl ${isActive ? colors.bg : 'bg-gray-100'} border ${isActive ? colors.border : 'border-gray-200'}`}>
+                      <Icon className={`w-6 h-6 ${isActive ? colors.text : 'text-gray-600'}`} />
                     </div>
                     <div className="flex-1">
-                      <h4 className={`font-semibold mb-1 ${isActive ? colors.text : 'text-white'}`}>
+                      <h4 className={`font-semibold mb-1 ${isActive ? colors.text : 'text-gray-900'}`}>
                         {category.label}
                       </h4>
-                      <p className={`text-sm ${isActive ? 'text-gray-600' : 'text-gray-300'}`}>{category.description}</p>
+                      <p className="text-sm text-gray-600">{category.description}</p>
                       {isActive && (
                         <motion.div
                           className="flex items-center space-x-1 mt-2 text-sm"
